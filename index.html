@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bro Cinematic | We create cinematic stories for your brand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Leaflet Geocoder CSS (Search) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Bro <span>Cinematic</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+
+        <div class="home-content">
+            <h1 class="tagline">We create cinematic stories for your brand</h1>
+            <a href="#portfolio" class="cta-btn">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Car Cinematic Shoot</h3>
+                    <p>Capturing the essence of speed and elegance in high-definition cinematic motion.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Restaurant Video Shoot</h3>
+                    <p>Highlighting your culinary delights and ambiance to attract every foodie.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Home Opening Shoot</h3>
+                    <p>Professional video tours that showcase the beauty and luxury of your new home.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-star"></i>
+                    <h3>Event Cinematic Shoot</h3>
+                    <p>Making your special moments eternal with our high-end event coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <!-- Portfolio sections are currently empty -->
+            <div class="video-gallery" id="youtube-gallery">
+                <!-- YouTube videos will be added here -->
+            </div>
+
+            <div class="video-gallery reels-grid" id="insta-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <!-- Reel 1 -->
+                <a href="https://www.instagram.com/reel/DWEvuh_jwkR/" target="_blank" class="video-item reel-item">
+                    <div class="video-cover" style="background-color: #1a1a1a; display: flex; flex-direction: column; height: 100%;">
+                        <i class="fab fa-instagram" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                        <span style="font-size: 1.1rem; font-weight: bold;">Watch Reel 1</span>
+                        <p style="font-size: 0.8rem; color: #ccc; margin-top: 10px;">Click to view on Instagram</p>
+                        <div class="play-btn" style="margin-top: 25px;"><i class="fas fa-play"></i></div>
+                    </div>
+                </a>
+                
+                <!-- Reel 2 -->
+                <a href="https://www.instagram.com/reel/DWTTNYHj0aK/" target="_blank" class="video-item reel-item">
+                    <div class="video-cover" style="background-color: #1a1a1a; display: flex; flex-direction: column; height: 100%;">
+                        <i class="fab fa-instagram" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 15px;"></i>
+                        <span style="font-size: 1.1rem; font-weight: bold;">Watch Reel 2</span>
+                        <p style="font-size: 0.8rem; color: #ccc; margin-top: 10px;">Click to view on Instagram</p>
+                        <div class="play-btn" style="margin-top: 25px;"><i class="fas fa-play"></i></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">₹999</div>
+                    <ul>
+                        <li>1-2 Minute Edit</li>
+                        <li>1080p Quality</li>
+                        <li>1 Revision</li>
+                        <li>Background Music</li>
+                    </ul>
+                    <a href="https://wa.me/917500431460" class="price-btn">Book Now</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Standard</h3>
+                    <div class="price">₹2999</div>
+                    <ul>
+                        <li>1-3 Minute Edit</li>
+                        <li>4K Cinematic Quality</li>
+                        <li>3 Revisions</li>
+                        <li>Color Grading</li>
+                        <li>Drone Shots Included</li>
+                    </ul>
+                    <a href="https://wa.me/917500431460" class="price-btn">Book Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="price">₹4999</div>
+                    <ul>
+                        <li>Unlimited Duration</li>
+                        <li>Ultra HD 4K Quality</li>
+                        <li>Unlimited Revisions</li>
+                        <li>Premium Sound Design</li>
+                        <li>Full BTS Coverage</li>
+                    </ul>
+                    <a href="https://wa.me/917500431460" class="price-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <p><i class="fas fa-phone"></i> 7500431460 , 7303171275</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:rajkushwahajiff8937@gmail.com">rajkushwahajiff8937@gmail.com</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:omjikushawah75@gmail.com">omjikushawah75@gmail.com</a></p>
+                    <p><i class="fas fa-location-dot"></i> Delhi, Gurgaon, Noida, All Uttar Pradesh (India)</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/cinematic_chenal_1" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <div class="whatsapp-buttons" style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+                            <a href="https://wa.me/917500431460" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp 1 (7500431460)</a>
+                            <a href="https://wa.me/917303171275" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp 2 (7303171275)</a>
+                        </div>
+                    </div>
+                    <div class="qr-code-container">
+                        <a href="https://www.instagram.com/cinematic_chenal_1" target="_blank">
+                            <img src="https://i.imgur.com/your_qr_code_image.png" alt="Instagram QR Code" class="qr-code">
+                        </a>
+                    </div>
+                    <!-- Map for Location Choice -->
+                    <div class="map-selection-container" style="margin-top: 30px;">
+                        <p style="margin-bottom: 10px; font-weight: bold; color: var(--primary-color);">Search Shooting Area:</p>
+                        <div id="map" style="height: 300px; border-radius: 10px; z-index: 10; margin-bottom: 10px;"></div>
+                        <p id="location-status" style="font-size: 0.9rem; color: #ccc;">No area selected. Use search or click map.</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/rajkushwahajiff8937@gmail.com" method="POST" id="booking-form">
+                        <div class="form-group">
+                            <input type="text" id="user-name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="user-phone" name="phone" placeholder="Your Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="shooting-location" name="location" placeholder="Selected Shooting Location (from map)" readonly>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="user-message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bro Cinematic. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Leaflet Geocoder JS (Search) -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
